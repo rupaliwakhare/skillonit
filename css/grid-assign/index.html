@@ -1,0 +1,258 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /* style for top section */
+      h1 {
+        text-align: center;
+        font-family: sans-serif;
+      }
+      #top-section {
+        height: 300px;
+        /* border: 2px solid; */
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+      }
+      #top-section > img {
+        width: 100%;
+        height: 100px;
+      }
+      /* style for middle section */
+      #middle-section{
+        height: 300px;
+        line-height: 1;
+        margin: 0;
+        padding: 0;
+        text-align: center;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 40px 20px;
+
+      }
+      #middle-section>div{
+       
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+      }
+      #middle-section>div>img{
+        width: 100%;
+       
+      }
+      
+      /* media query for top section */
+      /* media query for mobile screen */
+      @media all and (min-width: 320px) and (max-width: 480px) {
+        #top-section {
+          /* height: 300px;
+            border: 2px solid; */
+          display: grid;
+          grid-template-columns: repeat(1, 1fr);
+          gap: 20px;
+        }
+      }
+      /* media query for meddium screen */
+      @media all and (min-width: 481px) and (max-width: 768px) {
+        #top-section {
+          /* height: 300px;
+            border: 2px solid; */
+          display: grid;
+          grid-template-columns: repeat(2, 1fr);
+          gap: 50px 40px;
+        }
+      }
+      /* media query for middle-section */
+      /* media query for mobile-scrren */
+      @media all and (min-width: 320px) and (max-width: 480px){
+         #middle-section{
+        /* height: 300px; */
+        /* border: 2px solid; */
+        line-height: 1;
+        margin: 0;
+        padding: 0;
+        text-align: center;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 40px 20px;
+
+      }
+      #second-hed{
+        margin-top: 80px;
+      }
+
+      }
+      /* media query for meddium-scrren */
+      @media all and (min-width: 481px) and (max-width: 768px){
+         #middle-section{
+        /* height: 300px; */
+        /* border: 2px solid; */
+        line-height: 1;
+        margin: 0;
+        padding: 0;
+        text-align: center;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 40px 20px;
+
+      }
+      #second-hed{
+        margin-top: 50px;
+      }
+      }
+      /* media query for large-scrren */
+      @media all and (min-width: 769px) and (max-width: 1002px){
+         #middle-section{
+        /* height: 300px; */
+        /* border: 2px solid; */
+        line-height: 1;
+        margin: 0;
+        padding: 0;
+        text-align: center;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 40px 20px;
+
+      }
+      
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Board Members</h1>
+    <div id="top-section">
+      <img
+        src="https://th.bing.com/th/id/OIP.gwll2WOcIM9Umrsc0L0R1AAAAA?rs=1&pid=ImgDetMain"
+        alt="image"
+      />
+
+      <img
+        src="https://th.bing.com/th/id/OIP.wn3MDYuwXIDU2Rvjj32dcgHaCq?w=616&h=221&rs=1&pid=ImgDetMain"
+        alt="image"
+      />
+      <img
+        src="https://data.org/wp-content/uploads/2022/05/omidyar-network-india-logo.png"
+        alt="image"
+      />
+    </div>
+    <h1 id="second-hed">Strategic Investers</h1>
+    <div id="middle-section">
+      <div>
+        <img src="https://th.bing.com/th?id=OVFT.xgCVmXHp84NlTmOSQe2nPC&pid=News&w=300&h=186&c=14&rs=2&qlt=90" alt="image">
+      <h3>Vijay shikhar Sharma</h3>
+      <p>Founder & CEO</p>
+      <img class="logo" src="https://th.bing.com/th/id/OIP.cvcJJOnz9kOexPfL3FXzOgHaCb?rs=1&pid=ImgDetMain" alt="logo">
+      </div>
+      <div>
+        <img src="https://th.bing.com/th?id=OVFT.xgCVmXHp84NlTmOSQe2nPC&pid=News&w=300&h=186&c=14&rs=2&qlt=90" alt="image">
+      <h3>Vijay shikhar Sharma</h3>
+      <p>Founder & CEO</p>
+      <img class="logo" src="https://th.bing.com/th/id/OIP.cvcJJOnz9kOexPfL3FXzOgHaCb?rs=1&pid=ImgDetMain" alt="logo">
+      </div>
+      <div>
+        <img src="https://th.bing.com/th?id=OVFT.xgCVmXHp84NlTmOSQe2nPC&pid=News&w=300&h=186&c=14&rs=2&qlt=90" alt="image">
+      <h3>Vijay shikhar Sharma</h3>
+      <p>Founder & CEO</p>
+      <img class="logo" src="https://th.bing.com/th/id/OIP.cvcJJOnz9kOexPfL3FXzOgHaCb?rs=1&pid=ImgDetMain" alt="logo">
+      </div>
+      <div>
+        <img src="https://th.bing.com/th?id=OVFT.xgCVmXHp84NlTmOSQe2nPC&pid=News&w=300&h=186&c=14&rs=2&qlt=90" alt="image">
+      <h3>Vijay shikhar Sharma</h3>
+      <p>Founder & CEO</p>
+      <img class="logo" src="https://th.bing.com/th/id/OIP.cvcJJOnz9kOexPfL3FXzOgHaCb?rs=1&pid=ImgDetMain" alt="logo">
+      </div>
+      <div>
+        <img src="https://th.bing.com/th?id=OVFT.xgCVmXHp84NlTmOSQe2nPC&pid=News&w=300&h=186&c=14&rs=2&qlt=90" alt="image">
+      <h3>Vijay shikhar Sharma</h3>
+      <p>Founder & CEO</p>
+      <img class="logo" src="https://th.bing.com/th/id/OIP.cvcJJOnz9kOexPfL3FXzOgHaCb?rs=1&pid=ImgDetMain" alt="logo">
+      </div>
+      <div>
+        <img src="https://th.bing.com/th?id=OVFT.xgCVmXHp84NlTmOSQe2nPC&pid=News&w=300&h=186&c=14&rs=2&qlt=90" alt="image">
+      <h3>Vijay shikhar Sharma</h3>
+      <p>Founder & CEO</p>
+      <img class="logo" src="https://th.bing.com/th/id/OIP.cvcJJOnz9kOexPfL3FXzOgHaCb?rs=1&pid=ImgDetMain" alt="logo">
+      </div>
+      <div>
+        <img src="https://th.bing.com/th?id=OVFT.xgCVmXHp84NlTmOSQe2nPC&pid=News&w=300&h=186&c=14&rs=2&qlt=90" alt="image">
+      <h3>Vijay shikhar Sharma</h3>
+      <p>Founder & CEO</p>
+      <img class="logo" src="https://th.bing.com/th/id/OIP.cvcJJOnz9kOexPfL3FXzOgHaCb?rs=1&pid=ImgDetMain" alt="logo">
+      </div>
+      <div>
+        <img src="https://th.bing.com/th?id=OVFT.xgCVmXHp84NlTmOSQe2nPC&pid=News&w=300&h=186&c=14&rs=2&qlt=90" alt="image">
+      <h3>Vijay shikhar Sharma</h3>
+      <p>Founder & CEO</p>
+      <img class="logo" src="https://th.bing.com/th/id/OIP.cvcJJOnz9kOexPfL3FXzOgHaCb?rs=1&pid=ImgDetMain" alt="logo">
+      </div>
+      <div>
+        <img src="https://th.bing.com/th?id=OVFT.xgCVmXHp84NlTmOSQe2nPC&pid=News&w=300&h=186&c=14&rs=2&qlt=90" alt="image">
+      <h3>Vijay shikhar Sharma</h3>
+      <p>Founder & CEO</p>
+      <img class="logo" src="https://th.bing.com/th/id/OIP.cvcJJOnz9kOexPfL3FXzOgHaCb?rs=1&pid=ImgDetMain" alt="logo">
+      </div>
+      <div>
+        <img src="https://th.bing.com/th?id=OVFT.xgCVmXHp84NlTmOSQe2nPC&pid=News&w=300&h=186&c=14&rs=2&qlt=90" alt="image">
+      <h3>Vijay shikhar Sharma</h3>
+      <p>Founder & CEO</p>
+      <img class="logo" src="https://th.bing.com/th/id/OIP.cvcJJOnz9kOexPfL3FXzOgHaCb?rs=1&pid=ImgDetMain" alt="logo">
+      </div>
+      <div>
+        <img src="https://th.bing.com/th?id=OVFT.xgCVmXHp84NlTmOSQe2nPC&pid=News&w=300&h=186&c=14&rs=2&qlt=90" alt="image">
+      <h3>Vijay shikhar Sharma</h3>
+      <p>Founder & CEO</p>
+      <img class="logo" src="https://th.bing.com/th/id/OIP.cvcJJOnz9kOexPfL3FXzOgHaCb?rs=1&pid=ImgDetMain" alt="logo">
+      </div>
+      <div>
+        <img src="https://th.bing.com/th?id=OVFT.xgCVmXHp84NlTmOSQe2nPC&pid=News&w=300&h=186&c=14&rs=2&qlt=90" alt="image">
+      <h3>Vijay shikhar Sharma</h3>
+      <p>Founder & CEO</p>
+      <img class="logo" src="https://th.bing.com/th/id/OIP.cvcJJOnz9kOexPfL3FXzOgHaCb?rs=1&pid=ImgDetMain" alt="logo">
+      </div>
+      <div>
+        <img src="https://th.bing.com/th?id=OVFT.xgCVmXHp84NlTmOSQe2nPC&pid=News&w=300&h=186&c=14&rs=2&qlt=90" alt="image">
+      <h3>Vijay shikhar Sharma</h3>
+      <p>Founder & CEO</p>
+      <img class="logo" src="https://th.bing.com/th/id/OIP.cvcJJOnz9kOexPfL3FXzOgHaCb?rs=1&pid=ImgDetMain" alt="logo">
+      </div>
+      <div>
+        <img src="https://th.bing.com/th?id=OVFT.xgCVmXHp84NlTmOSQe2nPC&pid=News&w=300&h=186&c=14&rs=2&qlt=90" alt="image">
+      <h3>Vijay shikhar Sharma</h3>
+      <p>Founder & CEO</p>
+      <img class="logo" src="https://th.bing.com/th/id/OIP.cvcJJOnz9kOexPfL3FXzOgHaCb?rs=1&pid=ImgDetMain" alt="logo">
+      </div>
+      <div>
+        <img src="https://th.bing.com/th?id=OVFT.xgCVmXHp84NlTmOSQe2nPC&pid=News&w=300&h=186&c=14&rs=2&qlt=90" alt="image">
+      <h3>Vijay shikhar Sharma</h3>
+      <p>Founder & CEO</p>
+      <img class="logo" src="https://th.bing.com/th/id/OIP.cvcJJOnz9kOexPfL3FXzOgHaCb?rs=1&pid=ImgDetMain" alt="logo">
+      </div>
+      <div>
+        <img src="https://th.bing.com/th?id=OVFT.xgCVmXHp84NlTmOSQe2nPC&pid=News&w=300&h=186&c=14&rs=2&qlt=90" alt="image">
+      <h3>Vijay shikhar Sharma</h3>
+      <p>Founder & CEO</p>
+      <img class="logo" src="https://th.bing.com/th/id/OIP.cvcJJOnz9kOexPfL3FXzOgHaCb?rs=1&pid=ImgDetMain" alt="logo">
+      </div>
+      <div>
+        <img src="https://th.bing.com/th?id=OVFT.xgCVmXHp84NlTmOSQe2nPC&pid=News&w=300&h=186&c=14&rs=2&qlt=90" alt="image">
+      <h3>Vijay shikhar Sharma</h3>
+      <p>Founder & CEO</p>
+      <img class="logo" src="https://th.bing.com/th/id/OIP.cvcJJOnz9kOexPfL3FXzOgHaCb?rs=1&pid=ImgDetMain" alt="logo">
+      </div>
+      <div>
+        <img src="https://th.bing.com/th?id=OVFT.xgCVmXHp84NlTmOSQe2nPC&pid=News&w=300&h=186&c=14&rs=2&qlt=90" alt="image">
+      <h3>Vijay shikhar Sharma</h3>
+      <p>Founder & CEO</p>
+      <img class="logo" src="https://th.bing.com/th/id/OIP.cvcJJOnz9kOexPfL3FXzOgHaCb?rs=1&pid=ImgDetMain" alt="logo">
+      </div>
+      <div>
+        <img src="https://th.bing.com/th?id=OVFT.xgCVmXHp84NlTmOSQe2nPC&pid=News&w=300&h=186&c=14&rs=2&qlt=90" alt="image">
+      <h3>Vijay shikhar Sharma</h3>
+      <p>Founder & CEO</p>
+      <img class="logo" src="https://th.bing.com/th/id/OIP.cvcJJOnz9kOexPfL3FXzOgHaCb?rs=1&pid=ImgDetMain" alt="logo">
+      </div>
+    </div>
+   
+      
+  </body>
+</html>
