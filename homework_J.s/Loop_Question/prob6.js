@@ -17,12 +17,12 @@
 // factrorial num of 5 is: 120
 
 
-let num = 5;
-let factorial = 1;
+let a = 5;
+let b = 1;
 for(i = 1; i<=5; i++){
-    factorial *= i;
+    b *= i;
 }
-console.log("factrorial num of 5 is:", factorial)
+console.log("factrorial num of 5 is:", b)
 
 
 // outut 

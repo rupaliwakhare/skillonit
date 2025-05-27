@@ -10,3 +10,6 @@ for(i = 1; i<=50; i++){
 
 }
 console.log("num divigible betn 1 to 50 is :", x);
+
+// output
+// num divigible betn 1 to 50 is : 16
