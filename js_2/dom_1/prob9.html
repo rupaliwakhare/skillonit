@@ -1,0 +1,33 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="login-container">
+        <h2>Login</h2>
+        <input type="text" id="username" placeholder="Username">
+        <input type="password" id="password" placeholder="Password">
+        <button onclick="validateLogin()">Login</button>
+        <p id="message"></p>
+    </div>
+    <!-- <script src="script.js"></script> -->
+</body>
+<script>
+    function validateLogin() {
+    const username = document.getElementById("username").value;
+    const password = document.getElementById("password").value;
+    const message = document.getElementById("message");
+
+    if (username === "rups" && password === "123@4") {
+        message.style.color = "green";
+        message.textContent = "Login successful!";
+    } else {
+        message.style.color = "red";
+        message.textContent = "Invalid username or password!";
+    }
+}
+    
+</script>
+</html>

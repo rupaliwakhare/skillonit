@@ -1,0 +1,38 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="Login_box">
+        <h2>Login</h2>
+        <input type="text" id="username" placeholder="Username">
+        <input type="text" id="password" placeholder="Password">
+        <button onclick="login()">login</button>
+        <p id="massages"></p>
+       
+    </div>
+    <script>
+        function login(){
+            const username = document.getElementById("username").value;
+            const password = document.getElementById("password").value;
+            const massages = document.getElementById("massages");
+
+           if (username !=="rua" && password !== "12345"){
+            massages.style.color = "red";
+            massages.textContent = "wrong username and password";
+        }else if (username !=="rua") {
+            massages.text.color = "red";
+            massetges.textContent = "wrong username";
+        } else if (password !== "12345") {
+            massages.text.color = "red";
+            massages.textContent = "wrong password";
+         }
+            massages.text.color = "green";
+            massages.textContent = "Login Succesfull"
+        }
+    
+    </script>
+</body>
+</html>
