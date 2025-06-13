@@ -1,0 +1,62 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Event</h1>
+
+
+
+
+
+    <h2>Change the color</h2>
+    <div>
+        <h1 id="hed3">I am hedding</h1>
+        <button>Click</button>
+    </div>
+</body>
+<script>
+    let hed = document.querySelector("h1")
+    let hed2 = document.querySelector("h2")
+    let btn = document.querySelector("button")
+
+
+
+    let hed3 = document.getElementById("hed3")
+    console.log(btn);
+
+    btn.addEventListener("click",xyz)
+    
+    function xyz() {
+        // alert("Click me")
+        // console.log(event.target.parentNode);
+
+
+        let x = event.target
+        console.log(x);
+
+       hed3.innerText = "Now button is clicked by - " + x + "Element"
+        
+        
+        
+    }
+
+ hed.addEventListener("mouseover" ,colorchange)
+    hed.addEventListener("mouseout" ,color)
+
+
+    function colorchange(){
+        hed2.style.color = "red";
+    }
+    function color(){
+        hed2.style.color = "black";
+    }
+
+
+
+
+
+</script>
+</html>

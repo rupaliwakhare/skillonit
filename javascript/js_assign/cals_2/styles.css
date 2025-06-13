@@ -3,17 +3,11 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: url(mgd.png);
+    background-image: url(bg3.jpg);
     background-repeat: no-repeat;
     background-size: cover;
 }
-h1{
-    text-align: center;
-    font-family: Impact,;
-    /* margin-left: 200px; */
-    margin-bottom: 300px;
-    
-}
+
 .calculator {
     margin-top: 140px;
     margin-right: 300px;
