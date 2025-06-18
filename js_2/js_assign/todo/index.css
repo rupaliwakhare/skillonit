@@ -55,10 +55,7 @@ div {
   * {
     box-sizing: border-box;
   }
-  clicked-deletevalue:hover{
-    color: red;
-    font-weight: bold;
-  }
+  
   input[type="text"],
   select,
   textarea {

@@ -2,11 +2,16 @@ let form = document.querySelector("form");
 let tbody = document.querySelector("tbody");
 form.addEventListener("submit", getData);
 
-let todo_arr = [];
+
+let todo_arr = JSON.parse(localStorage.getItem("array")) || [];
+  
+
+
+display (todo_arr);
 
 function getData() {
   event.preventDefault();
-  // console.log("hello")
+ 
   let task = form.task.value;
   let priority = form.priority.value;
 
@@ -16,6 +21,10 @@ function getData() {
   };
 
   todo_arr.push(todo_obj);
+  localStorage.setItem("array", JSON.stringify(todo_arr));
+  console.log(todo_arr);
+  
+  
   display(todo_arr);
 }
 
@@ -23,8 +32,17 @@ function display(data) {
   tbody.innerHTML = "";
 
   for (let i = 0; i < data.length; i++) {
-    //   console.log(data[i])
+   
     let row = document.createElement("tr");
+
+
+    if (data[i].priority.toLowerCase() === "high") {
+      row.style.backgroundColor = "red";
+    } else if (data[i].priority.toLowerCase() === "low") {
+      row.style.backgroundColor = "green";
+    }
+
+
     let col1 = document.createElement("td");
     col1.innerText = data[i].task;
     let col2 = document.createElement("td");
@@ -36,7 +54,11 @@ function display(data) {
     tbody.append(row);
   }
 }
+
+
+
 function deletevalue() {
     event.target.parentNode.remove();
     
 }
+
