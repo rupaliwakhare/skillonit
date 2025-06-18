@@ -1,1 +1,1 @@
-// 8.	8. Reverse the elements of an array (without using reverse method).
+8.	8. Reverse the elements of an array (without using reverse method).

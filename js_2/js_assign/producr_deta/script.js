@@ -50,9 +50,19 @@ function display(data) {
     col6.innerText = "price segment";
 
     let col7 = document.createElement("td");
+    col7.addEventListener("click",deleteinfo);
     col7.innerText = "Delete";
+    
 
     row.append(col1, col2, col3, col4, col5, col6, col7);
     tbody.append(row);
   }
 }
+
+function deleteinfo() {
+  event.target.parentNode.remove()
+  
+}
+
+  
+
