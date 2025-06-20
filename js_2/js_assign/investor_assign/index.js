@@ -1,3 +1,4 @@
+
 let investors = [
   {
     name: "Vijay Shekhar Sharma",
@@ -154,28 +155,25 @@ let investors = [
   },
 ];
 
-
-
 let container = document.getElementById("container");
 
+display();
 
+function display() {
+  for (let i = 0; i < investors.length; i++) {
+    let div = document.createElement("div");
+    let img = document.createElement("img");
+    img.src = investors[i].image;
+    let name = document.createElement("h2");
+    name.innerText = investors[i].name;
+    let role = document.createElement("h4");
+    role.innerText = investors[i].role;
+    let logo = document.createElement("img");
+    logo.setAttribute("id", "logo");
+    logo.src = investors[i].companyLogo;
 
-for (let i = 0; i < investors.length; i++) {
-  let div = document.createElement("div");
-  let img = document.createElement("img");
-  img.src = investors[i].image;
-  let name = document.createElement("h2");
-  name.innerText = investors[i].name;
-  let role = document.createElement("h4");
-  role.innerText = investors[i].role;
-  let logo = document.createElement("img");
-  logo.setAttribute("id","logo")
-  logo.src = investors[i].companyLogo;
-
-  div.append(img, name, role, logo);
-  container.append(div);
-
-
+    div.append(img, name, role, logo);
+    container.append(div);
+  }
 }
-
-
+  

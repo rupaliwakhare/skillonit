@@ -32,10 +32,10 @@ div {
     text-align: center;
   }
   
-  table tr:nth-child(even) {
+  /* table tr:nth-child(even) {
     background-color: #8caacf;
   }
-  
+   */
   table tr:hover {
     background-color: #ddd;
   }

@@ -34,18 +34,15 @@ function display(data) {
   for (let i = 0; i < data.length; i++) {
    
     let row = document.createElement("tr");
-
-
-    if (data[i].priority.toLowerCase() === "high") {
-      row.style.backgroundColor = "red";
-    } else if (data[i].priority.toLowerCase() === "low") {
-      row.style.backgroundColor = "green";
-    }
-
-
     let col1 = document.createElement("td");
     col1.innerText = data[i].task;
     let col2 = document.createElement("td");
+    if (data[i].priority.toLowerCase() === "high") {
+      col2.style.backgroundColor = "red";
+    } else if (data[i].priority.toLowerCase() === "low") {
+      col2.style.backgroundColor = "green";
+    }
+
     col2.innerText = data[i].priority;
     let col3 = document.createElement("td");
     col3.addEventListener("click",deletevalue);
