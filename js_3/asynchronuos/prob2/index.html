@@ -1,0 +1,40 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <a href="./productin.html">Product</a>
+    <div id="main"></div>
+    <button id="start">Start</button>
+    <button id="stop">Stop</button>
+</body>
+<script>
+    let data = JSON.parse(localStorage.getItem("Img_data"))
+    let div = document.getElementById("main")
+
+
+    let count = 0;
+    function display(){
+        let image = document.createElement("img")
+        image.src = data[count]
+        if (count==data.length-1){
+            count=0
+        }else{
+            count++;
+        }
+        div.append(image)
+    }
+
+    let x;
+
+    function start(){
+        x=setInterval(display,1000)
+    }
+
+    function stop(){
+        clearInterval(x)
+    }
+</script>
+</html>

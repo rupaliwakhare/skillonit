@@ -1,0 +1,51 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IBM</title>
+</head>
+<body>
+    <div class="main">
+        <input type="number" id="weight" placeholder="Enter your weight">
+        <br><br>
+        <input type="number" id="hight" placeholder="Enter your hight">
+        <br>
+        <br>
+        <button id="button">
+            submit
+        </button>
+    </div>
+</body>
+<script>
+
+
+    // let main = document.getElementById("main");
+    // let weight = document.getElementById("weight");
+    let hight = document.getElementById("hight");
+    // console.log(hight);
+    
+
+    let btn = document.getElementById("button");
+    // console.log(btn);
+    
+    
+    
+    btn.addEventListener("click",funibm);
+
+    function funibm(){
+    let weight = document.getElementById("weight");
+    // console.log(weight);
+    let hight = document.getElementById("hight");
+
+    if(bmi <= 18.4){
+        aler("your weight is Underweight")
+    }else if (bmi >= 18.5 && bmi <= 24.9){
+        alert("your weight is Normal weight")
+    }else{
+        aler("obse")
+    }
+    }
+    
+
+</script>
+</html>

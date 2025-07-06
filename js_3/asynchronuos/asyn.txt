@@ -1,0 +1,39 @@
+*Asynchronous*
+ 
+Asynchronous JavaScript allows you to perform tasks without blocking the main thread, enabling smoother and more efficient execution, especially for tasks like fetching data from APIs, reading files, or handling timers. 
+
+
+
+settimeout
+The setTimeout function is a built-in way to execute code after a specified delay,
+
+setInterval
+The function you're thinking of is setInterval, and it’s like the cousin of setTimeout—but instead of running once after a delay, it keeps going at regular intervals ⏱️.
+
+clearInterval
+To stop a setInterval from repeating, you use the clearInterval() function—and you need to pass it the interval ID returned by setInterval.
+
+
+syntax
+
+settimeout (function,time(ms))
+
+function rua(){
+    console.log("Hello World")
+}
+
+settimeout(rua,2000)
+
+
+
+setInterval
+
+it is used to repeating a function
+
+setInterval(function,time(ms))
+
+
+function greet(){
+    console.log("GOOD MORNING")
+}
+setInterval(greet,3000)

@@ -1,0 +1,26 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <a href="./index.html">Home</a>
+    <br>
+    <br>
+    <input id="image" type="text" placeholder="Enter your imahe URL">
+    <br><br><button onclick="sub()">Submit</button>
+</body>
+<script>
+    let image_url = document.getElementById("image");
+    let data = JSON.parse(localStorage.getItem("image_data")) || []
+
+    function sub(){
+        data.push(image_url.value)
+            localStorage.setItem("image_data",JSON.stringify("data"))
+        
+    }
+
+
+</script>
+</html>
