@@ -1,0 +1,26 @@
+🧠 DOM in JavaScript stands for the Document Object Model—a programming interface that lets JavaScript interact with and manipulate HTML and XML documents.
+
+🌳 What is the DOM?
+Think of your webpage as a tree of objects.
+
+Each HTML element (like <p>, <div>, <img>) becomes a node in this tree.
+
+JavaScript can access, modify, add, or remove these nodes dynamically.
+
+🛠️ What Can You Do with the DOM?
+Access elements: document.getElementById("myId")
+
+Change content: element.innerHTML = "Hello!"
+
+Modify styles: element.style.color = "red"
+
+React to events: element.addEventListener("click", myFunction)
+
+Create or delete elements: document.createElement("div"), element.remove()
+
+✨ Why It Matters
+Enables dynamic content without reloading the page.
+
+Powers interactive features like dropdowns, modals, and form validation.
+
+Ensures cross-browser compatibility through a standardized API.

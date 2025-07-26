@@ -1,0 +1,27 @@
+📜 What is DOM Level 1?
+DOM Level 1 was the first official specification of the Document Object Model, released by the W3C in 1998. It laid the foundation for how JavaScript interacts with HTML and XML documents.
+
+🧱 Key Features of DOM Level 1
+Core DOM: A generic interface for any structured document (like XML).
+
+HTML DOM: Specialized for HTML documents, allowing access to elements like <body>, <form>, etc.
+
+Introduced methods like:
+
+getElementById()
+
+getElementsByTagName()
+
+createElement()
+
+appendChild()
+
+🧪 Example
+html
+<p id="demo">Hello!</p>
+<script>
+  let para = document.getElementById("demo");
+  para.textContent = "Updated via DOM Level 1!";
+</script>
+🧠 Why It Matters
+DOM Level 1 was the starting point for modern web interactivity. While newer levels (like DOM Level 2 and 3) added events, styles, and traversal, DOM1 is still the core of how we manipulate the web today.
