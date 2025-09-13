@@ -21,7 +21,7 @@
       color: white;
       display: flex;
       align-items: center;
-      justify-content: space-between;
+      justify-content: space-around;
       padding: 0 20px;
       font-family: sans-serif;
     }
@@ -42,15 +42,18 @@
 
     .nav-links {
       display: flex;
-      gap: 20px;
+      gap: 40px;
     }
 
     .nav-links a {
       color: white;
       text-decoration: none;
       font-size: 16px;
+      margin-left: 20px;
     }
-
+    .nav-links a:hover {
+      color: rgb(224, 147, 171);
+    }
     .beta {
       display: flex;
       padding: 20px;
@@ -59,7 +62,7 @@
     .sidebar {
       width: 40%;
       height: 500px;
-      background-color: #f4f4f4;
+      background-color: #fffbfb;
       padding: 20px;
       display: flex;
       flex-direction: column;
@@ -91,26 +94,28 @@
       flex-wrap: wrap;
       gap: 20px;
       
+      
     }
 
     .box {
       width: 47%;
       height: 200px;
-      background-color: #ddd;
-     
+      background-color: #fffbfb;
+      margin-top: 20px;
       padding: 10px;
       display: flex;
       flex-direction: column;
       align-items: center;
       justify-content: space-between;
-      box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+      box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+      /* box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px; */
     }
 
     .img-box {
       width: 100px;
       height: 80px;
       background-color: white;
-      border: 1px solid #999;
+      /* border: 1px solid #999;/ */
       display: flex;
       align-items: center;
       justify-content: center;
